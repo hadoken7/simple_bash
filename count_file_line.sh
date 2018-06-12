@@ -4,3 +4,5 @@ line_count=`cat ${file_name} | wc -l`
 echo "${file_name} count: ${line_count}"
 cmd="sed -i 1i\${line_count} ${file_name}"
 eval ${cmd}
+cmd="cp ${file_name} /tmp/"
+eval ${cmd}
